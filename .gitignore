@@ -9,3 +9,4 @@ data
 
 # don't commit generated workspace files
 .luarc.json
+lazyvim.json
