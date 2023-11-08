@@ -13,8 +13,6 @@ require("lazy").setup({
     -- import any extras modules here
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     { import = "lazyvim.plugins.extras.formatting.black" },
-    { import = "lazyvim.plugins.extras.editor.symbols-outline" },
-    { import = "lazyvim.plugins.extras.editor.aerial" },
     { import = "lazyvim.plugins.extras.lang.docker" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.markdown" },
@@ -22,8 +20,17 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.python-semshi" },
     { import = "lazyvim.plugins.extras.lang.yaml" },
     { import = "lazyvim.plugins.extras.lsp.none-ls" },
+
+    -- edgy turns nvim into a terminal based IDE layout
+    { import = "lazyvim.plugins.extras.ui.edgy" },
+
+    -- These plugins need to be loaded after edgy
+    { import = "lazyvim.plugins.extras.editor.aerial" },
+    { import = "lazyvim.plugins.extras.editor.symbols-outline" },
+
     -- { import = "lazyvim.plugins.extras.lang.typescript" },
     -- { import = "lazyvim.plugins.extras.lang.json" },
+
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- import/override with your plugins
     { import = "plugins" },
